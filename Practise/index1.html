@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .main{  /* <!-- it is userdefined that means you can give main or any thing --> */
+        background-color: violet;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .main1{
+        background-color: blue;
+    }
+    #main2{  /* id attribute */
+        background-color: aqua;
+    }
+    span{
+        background-color: gold;
+    }
+    .main3{
+        background-color: blueviolet !important;/* it has more priority than all */
+
+    }
+</style>
+</head>
+<body style="background-color: pink;">
+    <div style="background-color: green; color: aqua;">This is div</div> <!-- inline css -->
+     <!--        property          value   property  value -->
+     <div style="background-color: orange;">This is div2</div> <!-- inline css -->
+     <div class="main">This is div3</div> <!-- internal css -->
+     <p class="main">This is paragraph</p><!-- internal css -->
+     <div class="main1">This is div4</div>
+     <div class="main main1">This is div5</div><!-- what you give the last css means that takes it -->
+     <div id="main2">This is div6</div> <!-- id attribute it must be unique by the element -->
+     <div style="background-color: blueviolet;display: inline;">This is div7</div> <!-- inline property -->
+     <div style="background-color: blueviolet;display: block;">This is div8</div> <!-- blocklevel property -->
+     <div id="main2" class="main">This is div9</div><!-- id has more priority than class -->
+     <div id="main2" class="main" style="background-color: blue;">This is div10</div><!--inline css has more priority than internal -->
+     <span>This is span</span>
+     <div style="background-color: greenyellow;" class="main3">This is div11</div>
+     <div style="background-color: greenyellow !important;" class="main3">This is div11</div><!-- important with inline it has more priority -->
+
+</body>
+</html>
+<!-- inline css-only one element having css property -->
+<!-- color is used to give the color on text -->
+<!-- internal css-apply css multiple elements -->
+<!-- selector-class,id,tag,pseudo,universal selector -->
+<!-- syntax for class: .userdefined
+      syntax for id   : #userdefined
+      syntax for tag  : tagname -->
+<!-- !important -->

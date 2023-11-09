@@ -1,0 +1,7 @@
+#counter{
+            color: brown;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            margin: 200px;
+}

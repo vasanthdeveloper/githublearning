@@ -1,0 +1,25 @@
+#book-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .book {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .book h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .book p {
+    margin: 5px 0;
+  }
+  
+  .highlight {
+    background-color: yellow;
+    font-weight: bold;
+  }
+  

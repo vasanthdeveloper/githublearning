@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            background-color: yellowgreen;
+         /* property            value */
+            display: inline;
+            top: 20px; /* it cannot apply(affect) it, because it is a static position property */
+            left: 1600px;/* it cannot apply(affect) it, because it is a static position property */
+        }
+        .main1{
+                 background-color: brown;
+                 position: fixed;
+                 top: 180px;
+        }
+        .parent{
+            background-color: green;
+            height: 80px;
+            position: relative;
+        }
+        .child1{
+            background-color: orange;
+            bottom: 0px;
+            left: 10px;
+            position: absolute;/* we cannot give inline property bacause absolute automatically takes it */
+        }
+        .child2{
+            background-color: bisque;
+            left: 30px;
+            position: relative;
+            display: inline;
+        }
+        .child3{
+            background-color: blue;
+            position:absolute;
+        }
+        .child4{
+            background-color: beige;
+            top: 20px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">This is div</div> <!-- static position property -->
+    <div class="main1">This is fixed</div>
+    <div class="parent">
+        <div class="child1">This is child1</div>
+        <div class="child2">This is child2</div>
+        <div class="child3">This is child3</div>
+        <div class="child4">This is child4</div>
+    </div>
+
+</body>
+</html>
+<!-- position properties:static,relative,absolute,fixed,sticky -->

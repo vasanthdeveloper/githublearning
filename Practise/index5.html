@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main:hover{ /* pseudo selector */
+    
+            background-color: green;
+        }
+        .main1:hover{ /* pseudo selector */
+    
+            color: red;
+        }
+        .main2:active{/* pseudo selector */
+              background-color: aqua;
+        }
+        a:visited{/* pseudo selector */
+            color: green;
+        }
+        .main3{/* linear gradient */
+               background-image: linear-gradient(to right,green,orange);
+                                                 /* direction */
+               height: 50px;
+        }
+        .main4{/* linear gradient */
+               background-image: linear-gradient(to left,green,orange);
+                                                 /* direction */
+               height: 50px;
+        }
+        .main5{/* linear gradient */
+               background-image: linear-gradient(to bottom right,green,orange);
+                                                 /* direction */
+               height: 80px;
+        }
+        .main6{/* linear gradient */
+               background-image: linear-gradient(25deg,green,orange);
+                                                 /* direction */
+               height: 80px;
+        }
+        .main7{/* radial gradient */
+               background-image: radial-gradient(green,orange);
+               height: 140px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="main">This is div</div>
+    <div class="main1">This is div2</div>
+    <div class="main2">This is div3</div>
+    <a href="https://www.google.com">GOOGLE</a>
+    <div class="main3">This is div4</div><br>
+    <div class="main4">This is div5</div><br>
+    <div class="main5">This is div6</div><br>
+    <div class="main6">This is div7</div><br>
+    <div class="main7">This is div8</div>
+</body>
+</html>
+<!-- pseudo selector -->
+<!-- gradients: color transitions 
+types: linear and radial gradient-->

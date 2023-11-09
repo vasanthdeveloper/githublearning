@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+        <input type="radio" name="option" value="Option 1">Option 1
+        <input type="radio" name="option" value="Option 2">Option 2
+        <input type="radio" name="option" value="Option 3">Option 3
+        <input type="radio" name="option" value="Option 4">Option 4
+        <input type="radio" name="option" value="Option 5">Option 5
+        <button type="button" onclick="getSelectedOptions()">Get Selected Options</button>
+        </form>
+        <script>
+            function getSelectedOptions() {
+            // Get all the radio buttons with the specified name
+            const radioButtons = document.querySelectorAll('input[type="radio"][name="option"]');
+            
+            // Create an array to store the selected options
+            const selectedOptions = [];
+            
+            // Loop through all the radio buttons to check if they are selected
+            radioButtons.forEach(radioButton => {
+            if (radioButton.checked) {
+            // If a radio button is checked, add its value to the array
+            selectedOptions.push(radioButton.value);
+            }
+            });
+            
+            // Output the selected options to the console (you can do other things with them)
+            console.log(selectedOptions);
+            }
+            </script>
+</body>
+</html>
