@@ -17,7 +17,7 @@ function CardLink(){
               <li><span className="fa-li"><i className="fas fa-check"></i></span>Community Access</li>
               <li className="text-muted"><span className="fa-li"><i className="fas fa-times"></i></span>Unlimited
                 Private Projects</li>
-              <li className="text-muted"><span class="fa-li"><i className="fas fa-times"></i></span>Dedicated
+              <li className="text-muted"><span className="fa-li"><i className="fas fa-times"></i></span>Dedicated
                 Phone Support</li>
               <li className="text-muted"><span className="fa-li"><i className="fas fa-times"></i></span>Free Subdomain
               </li>
@@ -25,7 +25,7 @@ function CardLink(){
                 Reports</li>
             </ul>
             <div className="d-grid">
-              <a href="#" className="btn btn-primary text-uppercase">Button</a>
+              <button className="btn btn-primary text-uppercase">Button</button>
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@ function CardLink(){
                 Reports</li>
             </ul>
             <div className="d-grid">
-              <a href="#" className="btn btn-primary text-uppercase">Button</a>
+              <button className="btn btn-primary text-uppercase">Button</button>
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@ function CardLink(){
               <li><span className="fa-li"><i className="fas fa-check"></i></span>Monthly Status Reports</li>
             </ul>
             <div className="d-grid">
-              <a href="#" className="btn btn-primary text-uppercase">Button</a>
+              <button className="btn btn-primary text-uppercase">Button</button>
             </div>
           </div>
         </div>
